@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entertainment__c</fullName>
+    <externalId>false</externalId>
+    <label>Entertainment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Games</fullName>
+                <default>false</default>
+                <label>Games</label>
+            </value>
+            <value>
+                <fullName>Live events</fullName>
+                <default>false</default>
+                <label>Live events</label>
+            </value>
+            <value>
+                <fullName>Movies</fullName>
+                <default>false</default>
+                <label>Movies</label>
+            </value>
+            <value>
+                <fullName>Music</fullName>
+                <default>false</default>
+                <label>Music</label>
+            </value>
+            <value>
+                <fullName>Reading</fullName>
+                <default>false</default>
+                <label>Reading</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Fitness and wellness</fullName>
+                <default>false</default>
+                <label>Fitness and wellness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

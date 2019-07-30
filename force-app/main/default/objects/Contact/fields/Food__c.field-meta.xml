@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Food__c</fullName>
+    <externalId>false</externalId>
+    <label>Food</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chinese cuisine</fullName>
+                <default>false</default>
+                <label>Chinese cuisine</label>
+            </value>
+            <value>
+                <fullName>French cuisine</fullName>
+                <default>false</default>
+                <label>French cuisine</label>
+            </value>
+            <value>
+                <fullName>German cuisine</fullName>
+                <default>false</default>
+                <label>German cuisine</label>
+            </value>
+            <value>
+                <fullName>Greek cuisine</fullName>
+                <default>false</default>
+                <label>Greek cuisine</label>
+            </value>
+            <value>
+                <fullName>Indian cuisine</fullName>
+                <default>false</default>
+                <label>Indian cuisine</label>
+            </value>
+            <value>
+                <fullName>Italian cuisine</fullName>
+                <default>false</default>
+                <label>Italian cuisine</label>
+            </value>
+            <value>
+                <fullName>Japanese cuisine</fullName>
+                <default>false</default>
+                <label>Japanese cuisine</label>
+            </value>
+            <value>
+                <fullName>Korean cuisine</fullName>
+                <default>false</default>
+                <label>Korean cuisine</label>
+            </value>
+            <value>
+                <fullName>Latin American cuisine</fullName>
+                <default>false</default>
+                <label>Latin American cuisine</label>
+            </value>
+            <value>
+                <fullName>Mexican cuisine</fullName>
+                <default>false</default>
+                <label>Mexican cuisine</label>
+            </value>
+            <value>
+                <fullName>Middle Eastern cuisine</fullName>
+                <default>false</default>
+                <label>Middle Eastern cuisine</label>
+            </value>
+            <value>
+                <fullName>Spanish cuisine</fullName>
+                <default>false</default>
+                <label>Spanish cuisine</label>
+            </value>
+            <value>
+                <fullName>Thai cuisine</fullName>
+                <default>false</default>
+                <label>Thai cuisine</label>
+            </value>
+            <value>
+                <fullName>Vietnamese cuisine</fullName>
+                <default>false</default>
+                <label>Vietnamese cuisine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

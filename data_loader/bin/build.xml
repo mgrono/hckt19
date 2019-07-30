@@ -1,0 +1,180 @@
+<project name="Sample usage of Salesforce Ant tasks" default="loadObjects" basedir="."
+         xmlns:sf="antlib:com.salesforce" xmlns:if="ant:if" xmlns:unless="ant:unless">
+
+    <!-- properties -->
+    <property file="../../build.properties"/>
+    <property environment="env"/>
+    <!-- conditions -->
+    <condition property="isWindows">
+        <os family="windows"/>
+    </condition>
+
+    <condition property="isUnix">
+        <os family="unix"/>
+    </condition>
+
+    <condition property="exec.process" value="process.bat">
+        <isset property="isWindows"/>
+    </condition>
+    <condition property="exec.process" value="./process.sh">
+        <isset property="isUnix"/>
+    </condition>
+
+    <condition property="exec.force" value="force.exe">
+        <isset property="isWindows"/>
+    </condition>
+    <condition property="exec.force" value="./force">
+        <isset property="isUnix"/>
+    </condition>
+
+
+    <!-- Setting default value for username, password and session id properties to empty string 
+         so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
+         will be treated literally.
+    -->
+    <condition property="sf.username" value=""> <not> <isset property="sf.username"/> </not> </condition>
+    <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
+    <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
+
+    <tstamp>
+        <format property="fileNameDate" pattern="yyyyMMddHHmmss" locale="en,UK" />
+    </tstamp>
+
+    <!-- macros definitions -->
+    <macrodef name="process" description="Macro which will execute process/process.sh with given processname">
+        <attribute name="processName"/>
+        <sequential>
+            <exec executable="${exec.process}" failonerror='true'>
+                <arg value=".."/>
+                <arg value="@{processName}"/>
+                <arg value="${env.name}"/>
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateDLKey" description="Macro which is used to generate dataloader encryption key">
+        <sequential>
+        <java classname="com.salesforce.dataloader.security.EncryptionUtil" outputproperty="output.key">
+            <arg value="-g"/>
+            <arg value="${fileNameDate}"/>
+            <classpath>
+                <pathelement location="../dataloader-42.0.0-uber.jar"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+        </java>
+        <!-- workaround for missing substr in ant -->
+        <script language="javascript">
+            var text = project.getProperty('output.key');
+            project.setProperty('output.key.cut',text.substr(text.indexOf(' - ')+3,text.length-text.indexOf(' - ')));
+        </script>
+        <echo file="../Key.txt" append="false">${output.key.cut}</echo>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="encryptPassword" description="Macro which is used to encrypt password in build.properties">
+        <sequential>
+            <java classname="com.salesforce.dataloader.security.EncryptionUtil" outputproperty="encryptedpwd">
+                <arg value="-e"/>
+                <arg value="${sf.password}"/>
+                <arg value="../Key.txt"/>
+                <classpath>
+                    <pathelement location="../dataloader-42.0.0-uber.jar"/>
+                    <pathelement path="${java.class.path}"/>
+                </classpath>
+            </java>
+            <script language="javascript">
+                var text = project.getProperty('encryptedpwd');
+                project.setProperty('encryptedpwd.cut',text.substr(text.indexOf(' - ')+3,text.length-text.indexOf(' - ')));
+            </script>
+            <propertyfile
+                    file="../../build.properties"
+                    comment="Build properties">
+                <entry key="dataloader.password" value="${encryptedpwd.cut}"/>
+            </propertyfile>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="checkErrorFileHasOneLine" description="Macro which checks if passed file has only one line. Otherwise will fail">
+        <attribute name="filename"/>
+        <sequential>
+            <local name="file_has_one_line"/>
+            <condition property="file_has_one_line"
+                       value="true">
+                <resourcecount when="eq" count="1">
+                    <tokens>
+                        <file file="@{filename}" />
+                    </tokens>
+                </resourcecount>
+            </condition>
+            <fail message="@{filename} has some errors" unless="file_has_one_line" />
+        </sequential>
+    </macrodef>
+
+
+    <macrodef name="sflogin" description="macro which will use force.com CLI to login to SF">
+        <attribute name="instance" default="test"/>
+        <sequential>
+            <chmod file="force" perm="ug+rx" osfamily="unix"/>
+            <exec executable="${exec.force}" failonerror='true'>
+                <arg value="login"/>
+                <arg value="-i=@{instance}"/>
+                <arg value="-u=${sf.username}"/>
+                <arg value="-p=${sf.password}"/>
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="sflogout" description="macro which will use force.com CLI to logout from SF">
+        <attribute name="instance" default="test"/>
+        <sequential>
+            <chmod file="force" perm="ug+rx" osfamily="unix"/>
+            <exec executable="${exec.force}" failonerror='true'>
+                <arg value="logout"/>
+                <arg value="-u=${sf.username}"/>
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="sfexecapex" description="marcro which will execute anonymous apex from given filename. Requires user to be logged earlier using sflogin command">
+        <attribute name="filename"/>
+        <sequential>
+            <chmod file="force" perm="ug+rx" osfamily="unix"/>
+            <exec executable="${exec.force}" failonerror='true'>
+                <arg value="apex"/>
+                <arg value="@{filename}"/>
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <!-- targets definitions -->
+
+    <target name="loadReservationsData" description="Target to insert Reservations Data">
+        <antcall target="-prepareConfigFiles" if:true="${isUnix}"/>
+        <chmod file="process.sh" perm="ug+rx" osfamily="unix"/>
+        <mkdir dir="../logs"/>
+        <zip destfile="../logs/Errors_${fileNameDate}.zip">
+            <zipfileset dir="../logs"
+                        includes="*error.csv"/>
+        </zip>
+        <delete>
+            <fileset dir="../logs"
+                     includes="*error.csv"/>
+        </delete>
+
+        <process processName="AccountUpsert"/>
+        <checkErrorFileHasOneLine filename="..\logs\Account_error.csv"/>
+        <process processName="ContactUpsert"/>
+        <checkErrorFileHasOneLine filename="..\logs\Contact_error.csv"/>
+        <process processName="HotelUpsert"/>
+        <checkErrorFileHasOneLine filename="..\logs\Hotel_error.csv"/>
+        <process processName="RoomUpsert"/>
+        <checkErrorFileHasOneLine filename="..\logs\Room_error.csv"/>
+        <process processName="ReservationUpsert"/>
+        <checkErrorFileHasOneLine filename="..\logs\Reservation_error.csv"/>
+    </target>
+
+    <target name="generateKeyAndEncryptPassword" description="Target which will generate new Key.txt and encrypt password from build.properties">
+       <generateDLKey/>
+        <encryptPassword/>
+    </target>
+</project>

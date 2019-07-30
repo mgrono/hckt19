@@ -1,0 +1,7 @@
+#Mapping values
+#Mon Jul 22 23:06:05 CEST 2019
+FLOOR=Floor__c
+EXTERNAL_ID=ExternalId__c
+TYPE=Type__c
+BED_TYPE=Bed_type__c
+HOTEL_EXTERNAL_ID=Hotel__r\:ExternalId__c

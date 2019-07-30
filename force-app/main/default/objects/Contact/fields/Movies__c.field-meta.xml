@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Movies__c</fullName>
+    <externalId>false</externalId>
+    <label>Movies</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Action movies</fullName>
+                <default>false</default>
+                <label>Action movies</label>
+            </value>
+            <value>
+                <fullName>Animated movies</fullName>
+                <default>false</default>
+                <label>Animated movies</label>
+            </value>
+            <value>
+                <fullName>Anime movies</fullName>
+                <default>false</default>
+                <label>Anime movies</label>
+            </value>
+            <value>
+                <fullName>Bollywood movies</fullName>
+                <default>false</default>
+                <label>Bollywood movies</label>
+            </value>
+            <value>
+                <fullName>Comedy movies</fullName>
+                <default>false</default>
+                <label>Comedy movies</label>
+            </value>
+            <value>
+                <fullName>Documentary movies</fullName>
+                <default>false</default>
+                <label>Documentary movies</label>
+            </value>
+            <value>
+                <fullName>Drama movies</fullName>
+                <default>false</default>
+                <label>Drama movies</label>
+            </value>
+            <value>
+                <fullName>Fantasy movies</fullName>
+                <default>false</default>
+                <label>Fantasy movies</label>
+            </value>
+            <value>
+                <fullName>Horror movies</fullName>
+                <default>false</default>
+                <label>Horror movies</label>
+            </value>
+            <value>
+                <fullName>Musical theatre</fullName>
+                <default>false</default>
+                <label>Musical theatre</label>
+            </value>
+            <value>
+                <fullName>Science fiction movies</fullName>
+                <default>false</default>
+                <label>Science fiction movies</label>
+            </value>
+            <value>
+                <fullName>Thriller movies</fullName>
+                <default>false</default>
+                <label>Thriller movies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

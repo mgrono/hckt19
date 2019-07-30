@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sport__c</fullName>
+    <externalId>false</externalId>
+    <label>Sport</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American football</fullName>
+                <default>false</default>
+                <label>American football</label>
+            </value>
+            <value>
+                <fullName>Association football (Soccer)</fullName>
+                <default>false</default>
+                <label>Association football (Soccer)</label>
+            </value>
+            <value>
+                <fullName>Auto racing</fullName>
+                <default>false</default>
+                <label>Auto racing</label>
+            </value>
+            <value>
+                <fullName>Baseball</fullName>
+                <default>false</default>
+                <label>Baseball</label>
+            </value>
+            <value>
+                <fullName>Basketball</fullName>
+                <default>false</default>
+                <label>Basketball</label>
+            </value>
+            <value>
+                <fullName>College football</fullName>
+                <default>false</default>
+                <label>College football</label>
+            </value>
+            <value>
+                <fullName>Golf</fullName>
+                <default>false</default>
+                <label>Golf</label>
+            </value>
+            <value>
+                <fullName>Marathons</fullName>
+                <default>false</default>
+                <label>Marathons</label>
+            </value>
+            <value>
+                <fullName>Skiing</fullName>
+                <default>false</default>
+                <label>Skiing</label>
+            </value>
+            <value>
+                <fullName>Snowboarding</fullName>
+                <default>false</default>
+                <label>Snowboarding</label>
+            </value>
+            <value>
+                <fullName>Swimming</fullName>
+                <default>false</default>
+                <label>Swimming</label>
+            </value>
+            <value>
+                <fullName>Tennis</fullName>
+                <default>false</default>
+                <label>Tennis</label>
+            </value>
+            <value>
+                <fullName>Thriathlons</fullName>
+                <default>false</default>
+                <label>Thriathlons</label>
+            </value>
+            <value>
+                <fullName>Volleyball</fullName>
+                <default>false</default>
+                <label>Volleyball</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

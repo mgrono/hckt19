@@ -1,0 +1,982 @@
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <CallOptions xmlns="urn:partner.soap.sforce.com">
+   <client>DataLoaderPartnerBatch/42.0</client>
+   <defaultNamespace xsi:nil="true" />
+  </CallOptions>
+ </env:Header>
+ <env:Body>
+  <m:login xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:username>test-fzoc3xeotebv@example.com</m:username>
+   <m:password>G_@1s059oq4xB7JWzHiTuc41u1PSnWF2pHB</m:password>
+  </m:login>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <CallOptions xmlns="urn:partner.soap.sforce.com">
+   <client>DataLoaderPartnerBatch/42.0</client>
+   <defaultNamespace xsi:nil="true" />
+  </CallOptions>
+  <SessionHeader xmlns="urn:partner.soap.sforce.com">
+   <sessionId>00D4E0000009abN!ARMAQGXcPpRERt6I4kKPsg3Fb5_v_dfA.2taUL.Qa4s4BXZPMH6SZ5DDekVHzbGCnDv7BXnmUGlrQoOqTOK66H_zwrNyttu9</sessionId>
+  </SessionHeader>
+ </env:Header>
+ <env:Body>
+  <m:describeSObject xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:sObjectType>Room__c</m:sObjectType>
+  </m:describeSObject>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <CallOptions xmlns="urn:partner.soap.sforce.com">
+   <client>DataLoaderPartnerBatch/42.0</client>
+   <defaultNamespace xsi:nil="true" />
+  </CallOptions>
+  <SessionHeader xmlns="urn:partner.soap.sforce.com">
+   <sessionId>00D4E0000009abN!ARMAQGXcPpRERt6I4kKPsg3Fb5_v_dfA.2taUL.Qa4s4BXZPMH6SZ5DDekVHzbGCnDv7BXnmUGlrQoOqTOK66H_zwrNyttu9</sessionId>
+  </SessionHeader>
+ </env:Header>
+ <env:Body>
+  <m:describeGlobal xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com" />
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <CallOptions xmlns="urn:partner.soap.sforce.com">
+   <client>DataLoaderPartnerBatch/42.0</client>
+   <defaultNamespace xsi:nil="true" />
+  </CallOptions>
+  <SessionHeader xmlns="urn:partner.soap.sforce.com">
+   <sessionId>00D4E0000009abN!ARMAQGXcPpRERt6I4kKPsg3Fb5_v_dfA.2taUL.Qa4s4BXZPMH6SZ5DDekVHzbGCnDv7BXnmUGlrQoOqTOK66H_zwrNyttu9</sessionId>
+  </SessionHeader>
+ </env:Header>
+ <env:Body>
+  <m:describeSObject xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:sObjectType>Hotel__c</m:sObjectType>
+  </m:describeSObject>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <CallOptions xmlns="urn:partner.soap.sforce.com">
+   <client>DataLoaderPartnerBatch/42.0</client>
+   <defaultNamespace xsi:nil="true" />
+  </CallOptions>
+  <AllowFieldTruncationHeader xmlns="urn:partner.soap.sforce.com">
+   <allowFieldTruncation>true</allowFieldTruncation>
+  </AllowFieldTruncationHeader>
+  <DisableFeedTrackingHeader xmlns="urn:partner.soap.sforce.com">
+   <disableFeedTracking>true</disableFeedTracking>
+  </DisableFeedTrackingHeader>
+  <SessionHeader xmlns="urn:partner.soap.sforce.com">
+   <sessionId>00D4E0000009abN!ARMAQGXcPpRERt6I4kKPsg3Fb5_v_dfA.2taUL.Qa4s4BXZPMH6SZ5DDekVHzbGCnDv7BXnmUGlrQoOqTOK66H_zwrNyttu9</sessionId>
+  </SessionHeader>
+ </env:Header>
+ <env:Body>
+  <m:upsert xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:externalIDFieldName>ExternalId__c</m:externalIDFieldName>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">19</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">110</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">111</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">112</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">113</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">8</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">114</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">115</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">116</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">117</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">118</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">119</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">120</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">21</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">22</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">23</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">24</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">25</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">26</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">27</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">28</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">29</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">210</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">211</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">8</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">212</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">213</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">214</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">215</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">216</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">217</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">218</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">219</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">3</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">220</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">31</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">32</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">33</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">34</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">35</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">36</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">37</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">38</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">39</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">8</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">310</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">311</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">312</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">313</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">314</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">315</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">316</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">3</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">317</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">318</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">319</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">4</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">320</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">8</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">01</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">02</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">03</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">04</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">8</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">05</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">06</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">07</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">08</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">09</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">010</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">011</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">7</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">012</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">013</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">014</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">015</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">016</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">VIP</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">017</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">1</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">018</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">019</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">1</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">020</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Single</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">11</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">6</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">12</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">13</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Double</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">14</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">15</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Apartment</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">2</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">16</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">Queen</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">5</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">17</sobj:ExternalId__c>
+   </m:sObjects>
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Room__c</sobj:type>
+    <sobj:Bed_type__c xsi:type="xsd:string">King</sobj:Bed_type__c>
+    <sobj:Hotel__r>
+     <sobj:type xsi:type="xsd:string">Hotel__c</sobj:type>
+     <sobj:ExternalId__c xsi:type="xsd:string">2</sobj:ExternalId__c>
+    </sobj:Hotel__r>
+    <sobj:Type__c xsi:type="xsd:string">Single</sobj:Type__c>
+    <sobj:Floor__c xsi:type="xsd:string">4</sobj:Floor__c>
+    <sobj:ExternalId__c xsi:type="xsd:string">18</sobj:ExternalId__c>
+   </m:sObjects>
+  </m:upsert>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------

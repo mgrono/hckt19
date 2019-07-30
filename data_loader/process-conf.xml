@@ -1,0 +1,220 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id = "buildProperties"
+          class = "org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name = "location" value = "../../build.properties"/>
+	<property name = "ignoreUnresolvablePlaceholders" value = "true" />
+    </bean>
+
+    <bean id = "AccountUpsert"
+          class = "com.salesforce.dataloader.process.ProcessRunner"
+          singleton = "false">
+        <description>Account Upsert</description>
+        <property name = "name" value = "AccountUpsert"/>
+        <property name = "configOverrideMap">
+            <map>
+                <entry key = "sfdc.debugMessages" value = "true"/>
+                <entry key = "sfdc.debugMessagesFile"
+                       value = "..\logs\AccountDebugMessages.log"/>
+                <entry key = "sfdc.endpoint" value = "${sf.serverurl}"/>
+                <!--Sandbox adress where you want to import data from csv file -->
+                <entry key = "sfdc.username" value = "${sf.username}"/>
+                <!--Password below has been encrypted using key file,
+                    therefore, it will not work without the key setting:
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value,
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key = "sfdc.password" value = "${dataloader.password}"/>
+                <!--Patch to file that contain encrypted password -->
+                <entry key = "process.encryptionKeyFile"
+                       value = "../Key.txt"/>
+                <entry key = "sfdc.timeoutSecs" value = "600"/>
+                <entry key = "sfdc.loadBatchSize" value = "200"/>
+                <!--Object type that you want to import -->
+                <entry key = "sfdc.entity" value = "Account"/>
+                <entry key = "process.operation" value = "upsert"/>
+                <entry key = "sfdc.externalIdField" value="ExternalId__c"/>
+                <!--Patch to file that mapp object fields -->
+                <entry key = "process.mappingFile"
+                       value = "../data/AccountMapping.sdl"/>
+                <!--Patch to file that contain import data -->
+                <entry key = "dataAccess.name"
+                       value = "../data/Account.csv"/>
+                <entry key = "process.outputSuccess"
+                       value = "../logs/Account_success.csv"/>
+                <entry key = "process.outputError"
+                       value = "../logs/Account_error.csv"/>
+                <entry key = "dataAccess.type" value = "csvRead"/>
+            </map>
+        </property>
+    </bean>
+    <bean id = "ContactUpsert"
+          class = "com.salesforce.dataloader.process.ProcessRunner"
+          singleton = "false">
+        <description>Contact Upsert</description>
+        <property name = "name" value = "ContactUpsert"/>
+        <property name = "configOverrideMap">
+            <map>
+                <entry key = "sfdc.debugMessages" value = "true"/>
+                <entry key = "sfdc.debugMessagesFile"
+                       value = "..\logs\ContactDebugMessages.log"/>
+                <entry key = "sfdc.endpoint" value = "${sf.serverurl}"/>
+                <!--Sandbox adress where you want to import data from csv file -->
+                <entry key = "sfdc.username" value = "${sf.username}"/>
+                <!--Password below has been encrypted using key file,
+                    therefore, it will not work without the key setting:
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value,
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key = "sfdc.password" value = "${dataloader.password}"/>
+                <!--Patch to file that contain encrypted password -->
+                <entry key = "process.encryptionKeyFile"
+                       value = "../Key.txt"/>
+                <entry key = "sfdc.timeoutSecs" value = "600"/>
+                <entry key = "sfdc.loadBatchSize" value = "200"/>
+                <!--Object type that you want to import -->
+                <entry key = "sfdc.entity" value = "Contact"/>
+                <entry key = "process.operation" value = "upsert"/>
+                <entry key = "sfdc.externalIdField" value="ExternalId__c"/>
+                <!--Patch to file that mapp object fields -->
+                <entry key = "process.mappingFile"
+                       value = "../data/ContactMapping.sdl"/>
+                <!--Patch to file that contain import data -->
+                <entry key = "dataAccess.name"
+                       value = "../data/Contact.csv"/>
+                <entry key = "process.outputSuccess"
+                       value = "../logs/Contact_success.csv"/>
+                <entry key = "process.outputError"
+                       value = "../logs/Contact_error.csv"/>
+                <entry key = "dataAccess.type" value = "csvRead"/>
+            </map>
+        </property>
+    </bean>
+    <bean id = "HotelUpsert"
+          class = "com.salesforce.dataloader.process.ProcessRunner"
+          singleton = "false">
+        <description>Account Upsert</description>
+        <property name = "name" value = "HotelUpsert"/>
+        <property name = "configOverrideMap">
+            <map>
+                <entry key = "sfdc.debugMessages" value = "true"/>
+                <entry key = "sfdc.debugMessagesFile"
+                       value = "..\logs\HotelDebugMessages.log"/>
+                <entry key = "sfdc.endpoint" value = "${sf.serverurl}"/>
+                <!--Sandbox adress where you want to import data from csv file -->
+                <entry key = "sfdc.username" value = "${sf.username}"/>
+                <!--Password below has been encrypted using key file,
+                    therefore, it will not work without the key setting:
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value,
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key = "sfdc.password" value = "${dataloader.password}"/>
+                <!--Patch to file that contain encrypted password -->
+                <entry key = "process.encryptionKeyFile"
+                       value = "../Key.txt"/>
+                <entry key = "sfdc.timeoutSecs" value = "600"/>
+                <entry key = "sfdc.loadBatchSize" value = "200"/>
+                <!--Object type that you want to import -->
+                <entry key = "sfdc.entity" value = "Hotel__c"/>
+                <entry key = "process.operation" value = "upsert"/>
+                <entry key = "sfdc.externalIdField" value="ExternalId__c"/>
+                <!--Patch to file that mapp object fields -->
+                <entry key = "process.mappingFile"
+                       value = "../data/HotelMapping.sdl"/>
+                <!--Patch to file that contain import data -->
+                <entry key = "dataAccess.name"
+                       value = "../data/Hotel.csv"/>
+                <entry key = "process.outputSuccess"
+                       value = "../logs/Hotel_success.csv"/>
+                <entry key = "process.outputError"
+                       value = "../logs/Hotel_error.csv"/>
+                <entry key = "dataAccess.type" value = "csvRead"/>
+            </map>
+        </property>
+    </bean>
+    <bean id = "RoomUpsert"
+          class = "com.salesforce.dataloader.process.ProcessRunner"
+          singleton = "false">
+        <description>Room Upsert</description>
+        <property name = "name" value = "RoomUpsert"/>
+        <property name = "configOverrideMap">
+            <map>
+                <entry key = "sfdc.debugMessages" value = "true"/>
+                <entry key = "sfdc.debugMessagesFile"
+                       value = "..\logs\RoomDebugMessages.log"/>
+                <entry key = "sfdc.endpoint" value = "${sf.serverurl}"/>
+                <!--Sandbox adress where you want to import data from csv file -->
+                <entry key = "sfdc.username" value = "${sf.username}"/>
+                <!--Password below has been encrypted using key file,
+                    therefore, it will not work without the key setting:
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value,
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key = "sfdc.password" value = "${dataloader.password}"/>
+                <!--Patch to file that contain encrypted password -->
+                <entry key = "process.encryptionKeyFile"
+                       value = "../Key.txt"/>
+                <entry key = "sfdc.timeoutSecs" value = "600"/>
+                <entry key = "sfdc.loadBatchSize" value = "200"/>
+                <!--Object type that you want to import -->
+                <entry key = "sfdc.entity" value = "Room__c"/>
+                <entry key = "process.operation" value = "upsert"/>
+                <entry key = "sfdc.externalIdField" value="ExternalId__c"/>
+                <!--Patch to file that mapp object fields -->
+                <entry key = "process.mappingFile"
+                       value = "../data/RoomMapping.sdl"/>
+                <!--Patch to file that contain import data -->
+                <entry key = "dataAccess.name"
+                       value = "../data/Room.csv"/>
+                <entry key = "process.outputSuccess"
+                       value = "../logs/Room_success.csv"/>
+                <entry key = "process.outputError"
+                       value = "../logs/Room_error.csv"/>
+                <entry key = "dataAccess.type" value = "csvRead"/>
+            </map>
+        </property>
+    </bean>
+    <bean id = "ReservationUpsert"
+          class = "com.salesforce.dataloader.process.ProcessRunner"
+          singleton = "false">
+        <description>Reservation Upsert</description>
+        <property name = "name" value = "ReservationUpsert"/>
+        <property name = "configOverrideMap">
+            <map>
+                <entry key = "sfdc.debugMessages" value = "true"/>
+                <entry key = "sfdc.debugMessagesFile"
+                       value = "..\logs\ReservationDebugMessages.log"/>
+                <entry key = "sfdc.endpoint" value = "${sf.serverurl}"/>
+                <!--Sandbox adress where you want to import data from csv file -->
+                <entry key = "sfdc.username" value = "${sf.username}"/>
+                <!--Password below has been encrypted using key file,
+                    therefore, it will not work without the key setting:
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value,
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key = "sfdc.password" value = "${dataloader.password}"/>
+                <!--Patch to file that contain encrypted password -->
+                <entry key = "process.encryptionKeyFile"
+                       value = "../Key.txt"/>
+                <entry key = "sfdc.timeoutSecs" value = "600"/>
+                <entry key = "sfdc.loadBatchSize" value = "200"/>
+                <entry key = "sfdc.timezone" value = "GMT"/>
+                <!--Object type that you want to import -->
+                <entry key = "sfdc.entity" value = "Reservation__c"/>
+                <entry key = "process.operation" value = "upsert"/>
+                <entry key = "sfdc.externalIdField" value="Id"/>
+                <!--Patch to file that mapp object fields -->
+                <entry key = "process.mappingFile"
+                       value = "../data/ReservationMapping.sdl"/>
+                <!--Patch to file that contain import data -->
+                <entry key = "dataAccess.name"
+                       value = "../data/Reservation.csv"/>
+                <entry key = "process.outputSuccess"
+                       value = "../logs/Reservation_success.csv"/>
+                <entry key = "process.outputError"
+                       value = "../logs/Reservation_error.csv"/>
+                <entry key = "dataAccess.type" value = "csvRead"/>
+            </map>
+        </property>
+    </bean>
+</beans>

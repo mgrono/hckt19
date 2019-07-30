@@ -1,0 +1,13 @@
+#Mapping values
+#Mon Jul 22 23:02:04 CEST 2019
+ACCOUNT_EXTERNAL_ID=Account\:ExternalId__c
+FIRSTNAME=FirstName
+LASTNAME=LastName
+EXTERNAL_ID=ExternalId__c
+HOBBIES_AND_ACTIVITIES=Hobbies_and_activities__c
+TYPE=Type__c
+ENTERTAINMENT=Entertainment__c
+SPORT=Sport__c
+MOVIES=Movies__c
+SHOPPING=Shopping__c
+FOOD=Food__c

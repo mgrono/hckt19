@@ -1,0 +1,7 @@
+#Mapping values
+#Mon Jul 22 23:03:24 CEST 2019
+GEO_LATITUDE=Geo__Latitude__s
+GEO_LONGITUDE=Geo__Longitude__s
+EXTERNAL_ID=ExternalId__c
+ADDRESS=Address__c
+NAME=Name

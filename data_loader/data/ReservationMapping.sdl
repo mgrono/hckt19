@@ -1,0 +1,6 @@
+#Mapping values
+#Mon Jul 22 23:07:26 CEST 2019
+CONTACT_EXTERNAL_ID=Contact__r\:ExternalId__c
+ROOM_EXTERNAL_ID=Room__r\:ExternalId__c
+DATE_CHECK_IN=DateCheckIn__c
+DATE_CHECK_OUT=DateCheckOut__c
