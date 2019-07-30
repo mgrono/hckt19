@@ -8,14 +8,14 @@
     sfdx force:auth:web:login -d -a *your_hub_org*
     ```
 
-1. Clone the purealoe repository:
+1. Clone the repository:
     ```
     git clone https://github.com/mgrono/hckt19/
     ```
 
-1. Create a scratch org and provide it with an alias (ex: purealoe):
+1. Create a scratch org and provide it with an alias (ex: hckt):
     ```
-    sfdx force:org:create -s -f config/project-scratch-def.json -a *purealoe*
+    sfdx force:org:create -s -f config/project-scratch-def.json -a *hckt*
     ```
 
 1. Push the app to your scratch org:
