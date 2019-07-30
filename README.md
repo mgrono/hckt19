@@ -15,6 +15,7 @@
 
 1. Create a scratch org and provide it with an alias (ex: hckt):
     ```
+    cd hckt19
     sfdx force:org:create -s -f config/project-scratch-def.json -a *hckt*
     ```
 
