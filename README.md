@@ -28,7 +28,7 @@
 
 1. Encrypt password
     ```
-    ant gene rateKey AndEncryptPasswordAndEncryptPassword
+    ant generateKeyAndEncryptPasswordAndEncryptPassword
     ```
 
 1. Import sample data
