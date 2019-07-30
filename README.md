@@ -23,11 +23,26 @@
     ```
     sfdx force:source:push
     ```
+    
+1. Display user information
+    ```
+    sfdx force:user:display
+    ```
+    
+1. Generate user password
+    ```
+    sfdx force:user:password:generate --targetusername <username>
+    ```
+    
+1. Open the scratch org
+    ```
+    sfdx force:org:open
+    ```
 
 1. Reset Security Token
 1. Update build.properties (add token to the password)
 
-1. Encrypt password
+1. Encrypt dataloader password
     ```
     ant generateKeyAndEncryptPasswordAndEncryptPassword
     ```
