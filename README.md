@@ -44,10 +44,11 @@
 
 1. Encrypt dataloader password
     ```
-    ant generateKeyAndEncryptPasswordAndEncryptPassword
+    cd data_loader\bin
+    ant generateKeyAndEncryptPassword
     ```
 
 1. Import sample data
     ```
-    ant loadReservationsDataloadReservationsData
+    ant loadReservationsData
     ```	
